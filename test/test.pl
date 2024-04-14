@@ -1,4 +1,3 @@
-
 % Hechos que representan los síntomas de cada enfermedad
 sintoma(gripe, fiebre).
 sintoma(gripe, congestion_nasal).
