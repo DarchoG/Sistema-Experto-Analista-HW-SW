@@ -1,3 +1,5 @@
+:- set_prolog_flag(encoding, utf8).
+
 main:-
 	write("--- Bienvenido ---"),
 	nl,
