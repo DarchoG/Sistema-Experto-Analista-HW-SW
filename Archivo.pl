@@ -2,9 +2,9 @@ main:-
 	write("--- Bienvenido ---"),
 	nl,
 	nl,
-	write("Soy un sistema experto en el diagnostico de problemas de hardware y software en sistemas computacionales, te realizare una serie de preguntas para ayudarte, responde con si o no"),
+	write("Soy un sistema experto en el diagnostico de problemas de hardware y software en sistemas computacionales, te realizare una serie de preguntas para ayudarte, responde con si o no."),
 	analisis(Problema),
-	((Problema == desconocido) -> write("Tu problema es desconocido")),
+	((Problema == desconocido) -> write("Tu problema es desconocido.") ; true),
 	limpiarBaseConocimientos.
 
 analisis(discoDefectuoso)		:- discoDefectuoso, !.
@@ -17,7 +17,7 @@ analisis(tecladoRaton)			:- tecladoRaton, !.
 analisis(audio)				:- audio, !.
 analisis(pantalla)			:- pantalla, !.
 analisis(unidadOptica)			:- unidadOptica, !.
-analisis(usb)				:- usb, !.
+analisis(USB)				:- USB, !.
 analisis(bateria)			:- bateria, !.
 analisis(bios)				:- bios, !.
 analisis(sistemaOperativo)		:- sistemaOperativo, !.
