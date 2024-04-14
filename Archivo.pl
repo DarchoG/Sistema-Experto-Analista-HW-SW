@@ -68,7 +68,7 @@ memoriaRAM :-
 sobrecalentamientoProcesador :-
    	verificar("¿La computadora se apaga sin previo aviso?"),
    	verificar("¿El ventilador del procesador funciona constantemente a alta velocidad?"),
-	verificar("¿Experimenta una rendimiento general del sistema?"),
+	verificar("¿Experimenta una rendimiento inferior general del sistema?"),
 	write("El problema que tienes radica en el sobrecalentamiento del procesador."),
 	nl,
 	nl,
@@ -84,7 +84,7 @@ sobrecalentamientoProcesador :-
 
 tarjetaGrafica :-
    	verificar("¿Contempla artefactos visuales en la pantalla, como líneas o puntos extraños?"),
-   	verificar("¿Pantallas congeladas o parpadeantes?"),
+   	verificar("¿La antalla se congela o parpadea?"),
     	verificar("¿Es Incapacaz para iniciar el sistema operativo?"),
 	write("El problema que tienes radica en la tarjeta gráfica"),
 	nl,
