@@ -25,6 +25,7 @@ analisis(virus)				:- virus, !.
 analisis(actualizaciones)		:- actualizaciones, !.
 analisis(archivosCorruptos)		:- archivosCorruptos, !.
 analisis(compatibilidad)		:- compatibilidad, !.
+analisis(desconocido).
 
 discoDefectuoso :-
     	verificar("¿Experimenta ruidos provenientes del disco duro?"),
@@ -336,6 +337,8 @@ preguntar(Predicado) :-
 	read(Respuesta),
 	nl,
 	((Respuesta == si ; Respuesta == s ; Respuesta == yes) -> assert(si(Predicado)) ; assert(no(Predicado)), fail).
+
+:- dynamic si/1, no/1.
 
 verificar(Predicado) :- 
 	(si(Predicado) -> true; (no(Predicado) -> fail; preguntar(Predicado))).
