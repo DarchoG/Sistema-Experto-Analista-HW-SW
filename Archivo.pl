@@ -17,7 +17,7 @@ analisis(tecladoRaton)			:- tecladoRaton, !.
 analisis(audio)				:- audio, !.
 analisis(pantalla)			:- pantalla, !.
 analisis(unidadOptica)			:- unidadOptica, !.
-analisis(USB)				:- USB, !.
+analisis(usb)				:- usb, !.
 analisis(bateria)			:- bateria, !.
 analisis(bios)				:- bios, !.
 analisis(sistemaOperativo)		:- sistemaOperativo, !.
@@ -197,7 +197,7 @@ unidadOptica :-
 	write("3.- Reemplazar la unidad óptica sí está defectuosa."),
 	nl.
 
-USB :-
+usb :-
 	verificar("¿Los dispositivos USB que no son reconocidos?"),
 	verificar("¿Lentitud extrema al transferir datos a través de USB?"),
 	verificar("¿ Mensajes de error al conectar dispositivos USB?"),
