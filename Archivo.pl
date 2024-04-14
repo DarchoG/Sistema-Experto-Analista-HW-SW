@@ -17,7 +17,7 @@ analisis(tecladoRaton)			:- tecladoRaton, !.
 analisis(audio)				:- audio, !.
 analisis(pantalla)			:- pantalla, !.
 analisis(unidadOptica)			:- unidadOptica, !.
-analisis(USB)				:- USB, !.
+analisis(usb)				:- usb, !.
 analisis(bateria)			:- bateria, !.
 analisis(bios)				:- bios, !.
 analisis(sistemaOperativo)		:- sistemaOperativo, !.
