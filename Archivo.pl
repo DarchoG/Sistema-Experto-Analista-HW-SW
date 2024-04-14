@@ -3,6 +3,8 @@ main:-
 	nl,
 	nl,
 	write("Soy un sistema experto en el diagnostico de problemas de hardware y software en sistemas computacionales, te realizare una serie de preguntas para ayudarte, responde con si o no."),
+	nl,
+	nl,
 	analisis(Problema),
 	((Problema == desconocido) -> write("Tu problema es desconocido.") ; true),
 	limpiarBaseConocimientos.
@@ -334,6 +336,8 @@ compatibilidad :-
 	nl.
 
 preguntar(Predicado) :-
+	write(Predicado),
+	nl,
 	read(Respuesta),
 	nl,
 	((Respuesta == si ; Respuesta == s ; Respuesta == yes) -> assert(si(Predicado)) ; assert(no(Predicado)), fail).
