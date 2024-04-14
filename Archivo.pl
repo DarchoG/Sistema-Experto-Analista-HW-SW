@@ -1,7 +1,7 @@
 discoDefectuoso :-
     verificar("¿Experimenta ruidos provenientes del disco duro?"),
     verificar("¿Existe una lentitud extrema al acceder a archivos o iniciar el sistema operativo?"),
-    verificar("¿Dispone de errores frecuentes al leer o escribir datos?"),
+    verificar("¿Dispone de errores frecuentes al leer o escribir datos?")
 
 memoriaRAM :- 
     verificar("¿Aparecen pantallazos azules?"),
